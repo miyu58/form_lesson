@@ -321,6 +321,13 @@ input[type=checkbox] {
   border-color: #01a6a4;
 }
 
+.is-account:active {
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  color: #01a6a4;
+}
+
+
 /*                   bottom                   */
 .agreement {
   font-size: 12px;
@@ -330,7 +337,7 @@ input[type=checkbox] {
 
 .link-color {
   text-decoration: none;
-  color: #01bfbd;
+  color: #01a6a4;
 }
 
 .foot {
