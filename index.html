@@ -36,14 +36,14 @@
                     名字
                     <span class="kome">※</span>
                   </p>
-                  <input type="text" name="last-name" class="input-area">
+                  <input type="text" name="last-name" class="input-area is-focus">
                 </div>
                 <div class="name-box">
                   <p class="label-text">
                     名前
                     <span class="kome">※</span>
                   </p>
-                  <input type="text" name="first-name" class="input-area">
+                  <input type="text" name="first-name" class="input-area is-focus">
                 </div>
               </div>
               <div class="gender row">
@@ -83,28 +83,28 @@
                   Eメール
                   <span class="kome">※</span>
                 </p>
-                <input type="email" class="input-area" name="email" placeholder="ex) hoge@example.com">
+                <input type="email" class="input-area is-focus" name="email" placeholder="ex) hoge@example.com">
               </div>
               <div class="is-tel row">
                 <p class="label-text">
                   電話番号
                   <span class="kome">※</span>
                 </p>
-                <input type="tel" class="input-area" name="tel" placeholder="ex) 09012345678">
+                <input type="tel" class="input-area is-focus" name="tel" placeholder="ex) 09012345678">
               </div>
               <div class="pass row">
                 <p class="label-text">
                   パスワード
                   <span class="kome">※</span>
                 </p>
-                <input type="password" class="input-area" name="password">
+                <input type="password" class="input-area is-focus" name="password">
               </div>
               <div class="check-pass row">
                 <p class="label-text">
                   パスワード（確認用）
                   <span class="kome">※</span>
                 </p>
-                <input type="password" class="input-area" name="password">
+                <input type="password" class="input-area is-focus" name="password">
               </div>
               <div class="is-course row">
                 <p class="label-text">
@@ -127,10 +127,27 @@
                 <p class="label-text">
                   備考
                 </p>
-                <textarea name="remark" class="input-area remark-area" placeholder="何かあればご記入ください"></textarea>
+                <textarea name="remark" class="input-area is-focus remark-area" placeholder="何かあればご記入ください"></textarea>
+              </div>
+              <div class="row">
+                <button class="is-btn is-account">アカウント作成</button>
+              </div>
+              <div class="row">
+                <p class="agreement">アカウントを作成することにより、
+                  <a href="#" class="agreement link-color">利用規約</a>と
+                  <a href="#" class="agreement link-color">プライバシーポリシー</a>に同意するものとします。
+                </p>
               </div>
             </form>
           </div>
+        </div>
+        <div class="foot">
+          <p class="agreement">すでにアカウントをお持ちですか？
+          <span>
+            <a href="#" class="agreement link-color login">ログイン</a>
+          </span>
+          </p>
+          <a href="#" class="agreement link-color">認証メールが届きませんか？</a>
         </div>
       </div><!--              top-warap                 -->
     </section>
