@@ -14,6 +14,10 @@ body {
   background-color: #fff;
 }
 
+.row {
+  margin-bottom: 20px;
+}
+
 
 /* ========================================
     top
@@ -116,7 +120,6 @@ body {
 .is-name {
  display: flex;
  width: 100%;
- margin-bottom: 20px;
 }
 
 .name-box {
@@ -143,11 +146,16 @@ body {
   height: 36px;
   width: 100%;
   background-color: #fdfdfd;
+  color: #545658;
+  font-size: 13px;
+  line-height: 2px;
   border: 1px solid #d9d9d9;
   border-radius: 3px;
+  padding: 5px;
 }
 
 /*                   性別                    */
+
 
 .gender-box {
   display: flex;
@@ -191,22 +199,84 @@ input[type=radio] {
   top: 
 }
 
-.gender-text:checked + span::after {
+.input-ch:checked + span::after {
   content: "";
   display: block;
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   position: absolute;
+  top: 4px;
+  left: 4px;
   background-color: #01bfbd;
   border-radius: 50%;
 }
 
+/*                   性別                    */
+.select-area {
+  width: 50%;
+  position: relative;
+}
 
-/* ========================================
-    bottom
-========================================= */
+.select-area::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+  transform: rotate(-45deg);
+  top: 16px;
+  right: 16px;
+  border-left: 2px solid #d9d9d9;
+  border-bottom: 2px solid #d9d9d9;
+}
 
+option {
+  font-weight: normal;
+  display: block;
+  color: #545658;
+}
 
+/*                   希望コース                    */
 
+input[type=checkbox] {
+  display: none;
+}
+
+.course-option {
+  margin-bottom: 10px;
+  color: #545658;
+}
+
+.course-text {
+  position: relative;
+  padding-left: 25px;
+}
+
+.course-text::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #d9d9d9;
+}
+
+.course-input:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 16px;
+  border-right: 3px solid #01bfbd;
+  border-bottom: 3px solid #01bfbd;
+  transform: rotate(45deg);
+  top: -4px;
+  left: 6px;
+}
+
+/*                   備考                    */
+
+.remark-area {
+  height: 100px;
+}
 
 
