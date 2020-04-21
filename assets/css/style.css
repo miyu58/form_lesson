@@ -337,6 +337,8 @@ input[type=checkbox] {
 .link-color {
   text-decoration: none;
   color: #01a6a4;
+  border-bottom: 1px solid transparent;
+  opacity: 1;
 }
 
 .login {
@@ -346,15 +348,15 @@ input[type=checkbox] {
 .link-color:hover {
   color: #01bfbd;
 }
-
-.underline:hover {
-  border-bottom: 1px solid #01a6a4;
-}
-
 /*                  hover                */
 .foot {
   text-align: center;
 }
+.foot a:hover {
+  box-sizing: border-box;
+  border-bottom-color: #01bfbd;
+}
+
 
 .login {
   display: inline-block;
