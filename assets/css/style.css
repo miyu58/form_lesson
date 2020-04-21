@@ -123,11 +123,11 @@ textarea {
   padding: 0 10px;
 }
 /* ========================================
-   名前
+  名前
 ========================================= */
 .is-name {
- display: flex;
- width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 .name-box {
@@ -162,13 +162,6 @@ textarea {
   padding: 5px;
   outline: none;
 }
-/* 
-input:focus {
-  box-shadow: 0 0 0 2px rgb(226, 246, 252);
-  border: 1px solid #c9ddd8;
-  background-color: #fff;
-} */
-
 
 
 /*                   性別                    */
@@ -178,7 +171,6 @@ input:focus {
   display: flex;
   font-size: 16px;
   color: #545658;
- 
 }
 
 input[type=radio] {
@@ -190,6 +182,7 @@ input[type=radio] {
   position: relative;
   display: inline-block;
   margin-left: 15px;
+  cursor: pointer;
 }
 
 .gender-label:first-child {
@@ -227,10 +220,14 @@ input[type=radio] {
   border-radius: 50%;
 }
 
-/*                   性別                    */
+/*                   出身                    */
 .select-area {
   width: 50%;
   position: relative;
+}
+
+.pulldown {
+  -webkit-appearance: none;
 }
 
 .select-area::after {
@@ -266,6 +263,7 @@ input[type=checkbox] {
 .course-text {
   position: relative;
   padding-left: 25px;
+  cursor: pointer;
 }
 
 .course-text::before {
@@ -319,6 +317,7 @@ input[type=checkbox] {
   background-color: #01a6a4;
   transition: 0.3s;
   border-color: #01a6a4;
+  cursor: pointer;
 }
 
 .is-account:active {
@@ -340,6 +339,19 @@ input[type=checkbox] {
   color: #01a6a4;
 }
 
+.login {
+  margin-bottom: 0;
+}
+/*                  hover                */
+.link-color:hover {
+  color: #01bfbd;
+}
+
+.underline:hover {
+  border-bottom: 1px solid #01a6a4;
+}
+
+/*                  hover                */
 .foot {
   text-align: center;
 }
